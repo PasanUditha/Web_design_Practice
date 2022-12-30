@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <style>
+
+            /* Page internal css */
+            /* body {
+                background-color: lightblue;
+            } */
+
+            h1 {
+                color: white;
+                text-align: center;
+            }
+
+            p {
+                font-family: verdana;
+                font-size: 20px;
+            }
+
+            /* Nav bar css */
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 10px;
+                background-color: #38588a;
+            }
+
+            li{
+                display: inline;
+            }
+
+            li a{
+                padding: 10px;
+                color: white;
+                text-decoration: none;
+            }
+
+            .active{
+                background-color: #a51569;
+            }
+
+            li a:hover{
+                background-color: #01b48d;
+            }
+
+            /* Multimedia CSS */
+            /* img{
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 5px;
+                width: 150px;
+            } */
+
+            img{
+                max-width: auto;
+                height: auto;
+                opacity: 0.6;
+            }
+
+            video{
+                max-width: auto;
+                height: auto;
+            }
+
+            .transform_animation{
+                width: 200px;
+                height: 100px;
+                margin-top: 200px;
+                background-color: rgb(red);
+            }
+
+            .transform_animation:hover{
+                transform: rotate()
+            }
+
+            /* Pesudo Elements */
+
+            p::first-letter{
+                color: red;
+                font-size: 30px;
+            }
+        </style>
+        <title> My First web page </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <ul>
+            <Li> <a class="active" href="#">Home</a> </Li>
+            <Li> <a href="#">About</a> </Li>
+            <Li> <a href="#">Contact</a> </Li>
+        </ul>
+        Water is vtal for the life and 22nd of March is celebrated as World Water Day.
+        H2O is the chemical formula for water.
+        We must protect water bodies.<br>
+
+        <p>I am pasan Uditha</p>
+
+        <b>Water is vtal for the life and 22 <sup>nd</sup> of March is celebrated as World Water Day.
+        <i>H<sub>2</sub>O is the chemical formula for water.</i>
+        <small>We must protect water bodies.</small></b>
+
+        <!-- Headers -->
+        <h1>My First Heading</h1>
+        <h2>My Second Heading</h2>
+        <h3>My Third Heading</h3>
+
+        <!-- unordered list -->
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <!-- ordered list -->
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <!-- definition list -->
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+            <dt>Tea</dt>
+            <dd>also a hot drink</dd>
+        </dl>   
+
+        <!-- Add image -->
+        <img src="image-01.png" alt="Cake" width="120px" height="100px">
+
+        <!-- Table add -->
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+
+        <!-- Create Form -->
+        <form action="action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female">
+            <label for="female">Female</label><br>
+            
+            <label for="selection">Select your choice</label><br>
+            <input type="checkbox" id="c2">
+            <label for="c1">Online Lectures</label><br>
+            <input type="checkbox" id="c1">
+            <label for="c2">Physical lectures</label><br>
+
+            <input type="submit" value="Submit">
+
+            <!-- HTML Multimedia -->
+            <img src="image-01.png" alt="Cake" width="120px" height="100px"><br>
+
+            <video width="320" height="240" controls>
+                <source src="https://www.youtube.com/watch?v=qZVTkn2NjS0" type="video/mp4">
+                Your browser does not support the video tag.
+            </video><br>
+
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio><br>
+
+            <!-- Hyperlinks -->
+            <a href="https://www.w3schools.com" target="blank">Visit W3Schools</a><br>
+
+
+        </form>
+
+        <!-- CSS Animation -->
+        <h2>Multimedia</h2>
+        <center>
+            <div class="transform_animation"></div>
+        </center>
+
+
+        <p class="box1">This is my first box</p>
+        <p class="box2">This is my second box</p>
+
+
+    </body>
+
+
+
+
+</html>
