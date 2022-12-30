@@ -3,15 +3,35 @@
         <h1>JavaScript Events</h1>
     </head>
     <body>
+        <!-- JS Events -->
         <script language="JavaScript" type="text/JavaScript">
             function clickevent() {
                 document.write("First javaScript Event");
             }
         </script>
+
+        <script>
+            const form=document.getElementById('form');
+            const checkbox=document.getElementById('checkbox');
+            const massage=document.getElementById('massage');
+
+            form .addEventListener('submit', function validatecheckbox(e){
+                e.preventDefault()
+                if(checkbox.checked==true){
+                    massage.innerHTML="Checkbox is checked";
+                }else{
+                    massage.innerHTML="Something wrong";
+                }
+            })
+        </script>
         <form>
             <input type="button" value="Click this button" onclick="clickevent()">
-            <input type="text" id="input" onkeydown="clickEvent()">
-            <input type="text" id="input" onkeyup="clickEvent()">
+            <!-- <input type="text" id="input" onkeydown="clickEvent()"> -->
+            <input type="text" id="input" onkeypress="clickEvent()">
+
+            <input type="checkbox" id="checkbox">
+            <button type="submit">Submit</button>
+            <h5 id="massa"
         </form>
     </body>
 </html>
